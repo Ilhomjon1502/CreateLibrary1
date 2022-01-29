@@ -1,0 +1,28 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        //  maven { url "https://maven.fabric.io/public" }
+        maven {
+            url "https://jitpack.io"
+        }
+        maven {
+            url "https://raw.github.com/Raizlabs/maven-releases/master/releases"
+        }
+        maven {
+            url "http://oss.sonatype.org/content/repositories/snapshots"
+            allowInsecureProtocol = true
+        }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url "https://maven.google.com"
+        }
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "CreateLibSimple1"
+include ':app'
+include ':myToastLib'
